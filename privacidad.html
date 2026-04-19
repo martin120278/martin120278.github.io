@@ -2,20 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Política de Privacidad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - AgenciaSynaptx</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { color: #111; }
-    h2 { margin-top: 30px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+    h1 { font-size: 28px; font-weight: 600; margin-bottom: 4px; }
+    h2 { font-size: 18px; font-weight: 600; margin-top: 32px; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+    .brand { color: #1a1a2e; font-weight: 600; }
+    a { color: #1a56db; }
   </style>
 </head>
 <body>
+
   <h1>Política de Privacidad</h1>
-  <p><strong>Última actualización:</strong> marzo de 2026</p>
-  <p>Esta política describe cómo recopilamos, usamos y protegemos la información personal de los usuarios que interactúan con nuestro asistente de WhatsApp.</p>
+  <p class="updated"><strong>Última actualización:</strong> abril de 2026</p>
+
+  <p>Esta política describe cómo <span class="brand">AgenciaSynaptx</span> recopila, usa y protege la información personal de los usuarios que interactúan con los asistentes automatizados de WhatsApp desarrollados y operados por <span class="brand">AgenciaSynaptx</span>.</p>
 
   <h2>1. Responsable del tratamiento</h2>
-  <p>El responsable es el negocio o empresa que contrata el servicio de asistente automatizado de WhatsApp. Para consultas sobre el tratamiento de sus datos, contáctese directamente con el negocio a través del mismo canal de WhatsApp.</p>
+  <p><span class="brand">AgenciaSynaptx</span> es el proveedor tecnológico responsable del desarrollo y operación de los agentes de inteligencia artificial que funcionan sobre la plataforma WhatsApp Business API. AgenciaSynaptx opera bajo la aplicación de Meta identificada como <strong>AgenciaSynaptx</strong> (App ID: 688707397565040).</p>
+  <p>Para consultas sobre el tratamiento de sus datos, contáctese a través del canal de WhatsApp del negocio con el que interactuó, o directamente con AgenciaSynaptx mediante la dirección de correo electrónico disponible en nuestro sitio.</p>
 
   <h2>2. Datos que recopilamos</h2>
   <ul>
@@ -23,27 +40,44 @@
     <li>Nombre de usuario o nombre provisto durante la conversación</li>
     <li>Contenido de los mensajes enviados al asistente</li>
     <li>Información adicional que el usuario provea voluntariamente (turnos, consultas, datos de contacto, etc.)</li>
+    <li>Identificadores de cuenta de WhatsApp Business de los negocios clientes que utilizan la plataforma AgenciaSynaptx</li>
   </ul>
 
   <h2>3. Finalidad del tratamiento</h2>
-  <p>Los datos recopilados se utilizan exclusivamente para:</p>
+  <p>Los datos recopilados por <span class="brand">AgenciaSynaptx</span> se utilizan exclusivamente para:</p>
   <ul>
-    <li>Responder consultas de clientes a través de WhatsApp</li>
-    <li>Gestionar solicitudes, turnos, presupuestos u otras operaciones del negocio</li>
-    <li>Registrar la información en una base de datos para seguimiento interno del negocio</li>
-    <li>Mejorar la atención al cliente</li>
+    <li>Responder consultas de clientes finales a través de WhatsApp en nombre de los negocios que contratan el servicio</li>
+    <li>Gestionar solicitudes, turnos, presupuestos u otras operaciones del negocio cliente</li>
+    <li>Registrar la información en una base de datos para seguimiento interno del negocio cliente</li>
+    <li>Mejorar la atención al cliente mediante inteligencia artificial</li>
+    <li>Administrar cuentas de WhatsApp Business, números de teléfono y plantillas de mensajes de los negocios clientes</li>
   </ul>
 
   <h2>4. Almacenamiento y seguridad</h2>
-  <p>Los datos se almacenan en bases de datos seguras alojadas en infraestructura en la nube con acceso restringido. No se comparten con terceros salvo por obligación legal o requerimiento expreso del negocio responsable.</p>
+  <p>Los datos se almacenan en infraestructura segura en la nube operada por <span class="brand">AgenciaSynaptx</span> a través de los siguientes proveedores de servicios:</p>
+  <ul>
+    <li><strong>Amazon Web Services (AWS):</strong> funciones Lambda, almacenamiento S3 y base de datos DynamoDB</li>
+    <li><strong>OpenAI:</strong> procesamiento de lenguaje natural para el modelo de inteligencia artificial</li>
+    <li><strong>Contabo GmbH:</strong> infraestructura de servidor para servicios de gestión de conversaciones</li>
+  </ul>
+  <p>El acceso a los datos está restringido y protegido. No se comparten con terceros salvo por obligación legal, requerimiento expreso del negocio responsable, o por los subprocesadores declarados anteriormente en el marco de la prestación del servicio.</p>
 
-  <h2>5. Derechos del usuario</h2>
-  <p>Los usuarios pueden solicitar el acceso, rectificación o eliminación de sus datos en cualquier momento contactándose a través del mismo canal de WhatsApp por el que interactuaron con el asistente.</p>
+  <h2>5. Uso de la API de Meta y WhatsApp</h2>
+  <p><span class="brand">AgenciaSynaptx</span> accede a la plataforma WhatsApp Business API de Meta mediante los permisos <code>whatsapp_business_messaging</code> y <code>whatsapp_business_management</code>. Estos permisos se utilizan exclusivamente para:</p>
+  <ul>
+    <li>Enviar y recibir mensajes en nombre de los negocios clientes</li>
+    <li>Administrar cuentas de WhatsApp Business, plantillas de mensajes y configuración de webhooks</li>
+  </ul>
+  <p>El uso de estos permisos cumple con las Políticas de Desarrolladores de Meta y las Condiciones del Servicio de WhatsApp Business.</p>
 
-  <h2>6. Plataforma de mensajería</h2>
-  <p>El asistente opera sobre la plataforma WhatsApp Business API, propiedad de Meta. El uso de WhatsApp también está sujeto a la <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">Política de Privacidad de WhatsApp</a>.</p>
+  <h2>6. Derechos del usuario</h2>
+  <p>Los usuarios pueden solicitar el acceso, rectificación o eliminación de sus datos en cualquier momento contactándose a través del mismo canal de WhatsApp por el que interactuaron con el asistente de <span class="brand">AgenciaSynaptx</span>.</p>
 
-  <h2>7. Cambios en esta política</h2>
-  <p>Esta política puede actualizarse para reflejar cambios en el servicio o en la legislación aplicable. Los cambios serán publicados en esta misma página.</p>
+  <h2>7. Plataforma de mensajería</h2>
+  <p>Los asistentes de <span class="brand">AgenciaSynaptx</span> operan sobre la plataforma WhatsApp Business API, propiedad de Meta Platforms Inc. El uso de WhatsApp también está sujeto a la <a href="https://www.whatsapp.com/legal/privacy-policy">Política de Privacidad de WhatsApp</a> y a las <a href="https://www.whatsapp.com/legal/business-terms">Condiciones del Servicio de WhatsApp Business</a>.</p>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Esta política puede actualizarse para reflejar cambios en el servicio de <span class="brand">AgenciaSynaptx</span> o en la legislación aplicable. Los cambios serán publicados en esta misma página.</p>
+
 </body>
 </html>
